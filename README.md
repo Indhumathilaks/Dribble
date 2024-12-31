@@ -4,7 +4,6 @@
 ## AIM:
 To create a simplified clone of Dribbble (https://dribbble.com/) landing page.
 
-
 ## DESIGN STEPS:
 
 ### Step 1:
@@ -31,152 +30,135 @@ Publish the website in the LocalHost.
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore Nature</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dribbble Clone</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body class="bg-light">
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-        <div class="container">
-            <a class="navbar-brand" href="#">Nature's Wonders</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Log In</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-light text-dark px-3" href="#">Sign Up</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Header -->
-    <div class="bg-success text-white text-center py-4">
-        <h1>Nature's Wonders</h1>
-        <p class="mb-0">"Discover the beauty of nature and its hidden gems!"</p>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+    <div class="container">
+      <a class="navbar-brand" href="#">Dribbble</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Explore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Hire a Designer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Find Jobs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="btn btn-outline-dark me-2" href="#">Sign up</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-dark" href="#">Log in</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <!-- Categories -->
-    <div class="container my-5">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-                <a href="#" class="text-decoration-none">
-                    <div class="card h-100">
-                        <div class="ratio ratio-4x3">
-                        <img src="forest.jpg" class="card-img-top img-fluid" alt="Forests">
-                        <div class="card-body">
-                            <h5 class="card-title">Forests</h5>
-                            <p class="card-text">Explore the lush greenery and biodiversity of our forests.</p>
-                        </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="#" class="text-decoration-none">
-                    <div class="card h-100">
-                        <div class="ratio ratio-4x3">
-                        <img src="mountain.jpg" class="card-img-top img-fluid" alt="Mountains">
-                        <div class="card-body">
-                            <h5 class="card-title">Mountains</h5>
-                            <p class="card-text">Experience the majestic peaks and scenic views of nature's heights.</p>
-                        </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="#" class="text-decoration-none">
-                    <div class="card h-100">
-                        <div class="ratio ratio-4x3">
-                        <img src="river.jpg" class="card-img-top img-fluid" alt="Rivers">
-                        <div class="card-body">
-                            <h5 class="card-title">Rivers</h5>
-                            <p class="card-text">Discover the serenity of flowing rivers and their tranquil beauty.</p>
-                        </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="#" class="text-decoration-none">
-                    <div class="card h-100">
-                        <div class="ratio ratio-4x3">
-                        <img src="wildlife.jpg" class="card-img-top img-fluid" alt="Wildlife">
-                        <div class="card-body">
-                            <h5 class="card-title">Wildlife</h5>
-                            <p class="card-text">Get a closer look at the incredible animals of the wild.</p>
-                        </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="#" class="text-decoration-none">
-                    <div class="card h-100">
-                        <div class="ratio ratio-4x3">
-                        <img src="beach.jpg" class="card-img-top img-fluid" alt="Beaches">
-                        <div class="card-body">
-                            <h5 class="card-title">Beaches</h5>
-                            <p class="card-text">Relax on pristine beaches with golden sands and blue waters.</p>
-                        </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="#" class="text-decoration-none">
-                    <div class="card h-100">
-                        <div class="ratio ratio-4x3">
-                        <img src="desert.jpg" class="card-img-top img-fluid" alt="Deserts">
-                        <div class="card-body">
-                            <h5 class="card-title">Deserts</h5>
-                            <p class="card-text">Experience the vast expanse of serene deserts and their unique charm.</p>
-                        </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
+  <!-- Hero Section -->
+  <header class="py-5 text-center">
+    <div class="container">
+      <h1 class="display-4">Discover the world’s top designers</h1>
+      <p class="lead">Explore work from the most talented and accomplished designers ready to take on your next project</p>
+      <div class="input-group mt-4">
+        <input type="text" class="form-control" placeholder="What are you looking for?">
+        <button class="btn btn-primary" type="button">Search</button>
+      </div>
+      <div class="mt-3">
+        <span class="badge bg-light text-dark me-2">Trending searches</span>
+        <span class="badge bg-light text-dark">landing page</span>
+        <span class="badge bg-light text-dark">e-commerce</span>
+        <span class="badge bg-light text-dark">mobile app</span>
+        <span class="badge bg-light text-dark">logo design</span>
+        <span class="badge bg-light text-dark">dashboard</span>
+        <span class="badge bg-light text-dark">icons</span>
+      </div>
     </div>
+  </header>
 
-    <!-- Footer -->
-    <footer class="text-center py-3 bg-light">
-        <p>&copy; 2024 Nature's Wonders. All Rights Reserved.</p>
-    </footer>
+  <!-- Filter Section -->
+  <section class="bg-light py-3 border-bottom">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-light">Popular</button>
+        <button type="button" class="btn btn-light">Discover</button>
+        <button type="button" class="btn btn-light">Animation</button>
+        <button type="button" class="btn btn-light">Branding</button>
+        <button type="button" class="btn btn-light">Illustration</button>
+        <button type="button" class="btn btn-light">Web Design</button>
+      </div>
+      <button class="btn btn-outline-secondary">Filters</button>
+    </div>
+  </section>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Shots Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="1.webp" class="card-img-top" alt="Shot Image">
+            <div class="card-body">
+              <h5 class="card-title">Vaneltia</h5>
+              <p class="card-text">Alfrey Davilla</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="2.webp" class="card-img-top" alt="Shot Image">
+            <div class="card-body">
+              <h5 class="card-title">The Burrow - Critter Series</h5>
+              <p class="card-text">Val Waters</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="3.webp" class="card-img-top" alt="Shot Image">
+            <div class="card-body">
+              <h5 class="card-title">S logo exploration</h5>
+              <p class="card-text">Mark Smith</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light py-4">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2024 Dribbble Clone. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 ```
 
 ## OUTPUT:
 
-![alt text](<indhu/dapp/static/Screenshot 2024-12-25 104514.png>)
+![alt text](<indhu/dapp/static/Screenshot 2024-12-31 224025.png>)
 
 ## RESULT:
 The Project for responsive web design using Bootstrap is completed successfully.
